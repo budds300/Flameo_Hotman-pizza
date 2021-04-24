@@ -1,4 +1,5 @@
-function Pizza(size, crust, toppings){
+function Pizza(flavor,size, crust, toppings){
+    this.flavor= flavor;
     this.size = size;
     this.crust = crust;
     this.toppings = toppings;
@@ -46,11 +47,15 @@ form.addEventListener("submit", (e) =>{
     if (quantity >= 1 && deliveryCost){
         if (deliveryCost=="delivery") {
             let deliveryLocation= prompt("Enter Your Location");
-            alert("Hello your order is"+ customerOrder+". It will be delivered to you shortly at"+ deliveryLocation+ "Thank-you")
-             console.log(customerCostPrice.getPrice()*quantity + 300);
+            const deliveryPrice = 300;
+            let totalPriceDelivery = customerCostPrice.getPrice()*quantity +deliveryPrice;
+            alert("Hello your order is "+ customerOrder.flavorOrder+". It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+             console.log(customerCostPrice.getPrice()+ deliveryPrice *quantity );
             
         }
         else if (deliveryCost=="collection") {
+           alert( "Hello your order is"+ customerOrder+". It will be ready for collection to you shortly here at our shop in Ngong "+"and the total price is: "+customerCostPrice.getPrice()*quantity +  " Thank-you");
+            
             console.log(customerCostPrice.getPrice()*quantity);
             
         }

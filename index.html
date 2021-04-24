@@ -13,11 +13,24 @@
         <section>
             <div id="container" class="container text-white d-flex justify-content-center pt-5"> 
             <form id="pizza">
+                <div id="pizza-flavor">
+                    <select name="flavor-pizza" id="flavor">
+                        <option selected>Choose Your Flavor</option>
+                        <option value="1">Peri Peri Chicken</option>
+                        <option value="2"> Hawaiian</option>
+                        <option value="3">Boerewors Pizza</option>
+                        <option value="4">BBQ Steak Pizza</option>
+                        <option value="5">Chicken Tikka Pizza</option>
+                        <option value="6">Chicken and Mushroom </option>
+                        <option value="7">Margherita Pizza</option>
+                        <option value="8">Regina Pizza</option>
+                    </select>
+                </div>
                 <div class="size">
                     <select name="pizzaSize" id="pizza-size" class="form-control w-100">
                         <option selected>Choose your size</option>
                         <option value="1" name="small">Small-Ksh 600/-</option>
-                        <option value=2 name="medium">Medium-ksh 800/-</option>
+                        <option value="2" name="medium">Medium-ksh 800/-</option>
                         <option value="3" name="large">Large-ksh 1000/-</option>
                     </select>
                 </div> <br>
@@ -48,11 +61,14 @@
                 <div id="location">
                     <select id="delivery" class="form-control"> 
                         <option selected> Choose the appropriate option</option>
-                        <option value="Delivery">Delivery</option>
-                        <option value="Collection">Collection</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="collection">Collection</option>
                     </select>
                 </div> <br>
                 <button class="btn bg-dark text-white">Place Order</button>
+                <ul id="order-details">
+
+                </ul>
             </form>
 
         </section>

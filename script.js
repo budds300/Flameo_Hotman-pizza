@@ -18,5 +18,9 @@ const sizePrice = [600,800,1000];
 const crustPrice = [250,300,200];
 const toppingsPrice = [50,50,50,100,150,100,50];
 let form = document.getElementById("pizza");
-
+form.addEventListener("submit", (e) =>{
+    const sizePizza = document.getElementById("pizza-size").value;
+    const curstPizza = document.getElementById("crust").value;
+    const toppingsPizza = document.getElementById("toppings").value;
+   
 } )

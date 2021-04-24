@@ -22,5 +22,14 @@ form.addEventListener("submit", (e) =>{
     const sizePizza = document.getElementById("pizza-size").value;
     const curstPizza = document.getElementById("crust").value;
     const toppingsPizza = document.getElementById("toppings").value;
-   
+    let sizePizzaOrder= pizzaSize[sizePizza-1];
+    let crustPizzaOrder= pizzaCrust[curstPizza-1];
+    let toppingsPizzaOrder= pizzaToppings[toppingsPizza-1];
+    let customerOrder= new Pizza(sizePizzaOrdery,toppingsPizzaOrder,crustPizzaOrder);
+    const sizePriceOrder = sizePrice[sizePrice-1];
+    const crustPriceOrder = crustPrice[curstPizza-1];
+    const toppingsPriceOrder = toppingsPizza[toppingsPrice-1];
+    
+    let customerPrice = new Price(sizePizzaOrder,crustPizzaOrder,toppingsPizzaOrder);
+    
 } )

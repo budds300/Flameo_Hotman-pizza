@@ -9,7 +9,7 @@
     <title>Flameo Hotman Pizza</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <section>
             <div id="container" class="container text-white d-flex justify-content-center pt-5"> 
             <form id="pizza">
@@ -42,10 +42,22 @@
                         <option value="7">Green pepper -Ksh50</option>
                     </select>
                 </div><br>
+                <div class="form-check">
+                    <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity"> 
+                </div> <br> <br>
+                <div id="location">
+                    <select id="delivery" class="form-control"> 
+                        <option selected> Choose the appropriate option</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Collection">Collection</option>
+                    </select>
+                </div> <br>
+                <button class="btn bg-dark text-white">Place Order</button>
             </form>
 
         </section>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

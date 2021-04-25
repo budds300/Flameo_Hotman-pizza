@@ -1,0 +1,18 @@
+.nav{
+    background-color:#FF7500;
+    
+}
+a{
+    color:white;
+}
+.landing-page{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./Images/danielle-macinnes-logv9s7f67o-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+#about{
+    
+}

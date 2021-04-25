@@ -1,5 +1,7 @@
-.nav{
+
+#navigationBar{
     background-color:#FF7500;
+    
     
 }
 a{
@@ -14,10 +16,20 @@ a{
     height: 100vh; 
 }
 #About{
-    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./Images/chad-montano-MqT0asuoIcU-unsplash.jpg");
-    height: 50vh;
+    background-color: white;
+    height: 25vh;  
+}
+#orders{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./Images/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    height: 77vh;
     text-align: center;
     background-size: cover;
     background-position: center;
-    
+    background-attachment: fixed;
+}
+#footer{
+    background-color:#FC6400;
+}
+@media screen and(max-width: 514px){
+
 }

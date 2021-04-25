@@ -17,19 +17,19 @@ a{
 }
 #About{
     background-color: white;
-    height: 25vh;  
+    height: 30vh;  
+    margin: auto;
+    padding-top: 2em;
 }
 #orders{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./Images/chad-montano-MqT0asuoIcU-unsplash.jpg");
-    height: 77vh;
+    /* height: 77vh; */
     text-align: center;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    margin: auto;
+    
 }
 #footer{
     background-color:#FC6400;
-}
-@media screen and(max-width: 514px){
-
 }

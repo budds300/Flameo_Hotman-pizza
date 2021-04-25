@@ -49,9 +49,31 @@ form.addEventListener("submit", (e) =>{
             let deliveryLocation= prompt("Enter Your Location");
             const deliveryPrice = 300;
             let totalPriceDelivery = customerCostPrice.getPrice()*quantity +deliveryPrice;
-            alert("Hello your order is "+ customerOrder.flavorOrder+". It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            if(flavorPizza==1){
+            alert("Hello your order is Peri Peri Chicken It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")}
+            else if(flavorPizza==2){
+                alert("Hello your order is Hawaiian It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==3){
+                alert("Hello your order is Boerewors Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==4){
+                alert("Hello your order is BBQ Steak Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==5){
+                alert("Hello your order is Chicken Tikka Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==6){
+                alert("Hello your order is Chicken and Mushroom It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==7){
+                alert("Hello your order is Margherita Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
+            else if(flavorPizza==8){
+                alert("Hello your order is Regina Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            }
              console.log(customerCostPrice.getPrice()+ deliveryPrice *quantity );
-            
+             
         }
         else if (deliveryCost=="collection") {
            alert( "Hello your order is"+ customerOrder+". It will be ready for collection to you shortly here at our shop in Karen "+"and the total price is: "+customerCostPrice.getPrice()*quantity +  " Thank-you");

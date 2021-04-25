@@ -9,117 +9,120 @@
     <title>Flameo Hotman Pizza</title>
 </head>
 <body>
-   <div class="container-fluid">
-        <section id="navigationBar">
-            <nav class="navbar navbar-expand-lg navbar-light text-white">
-                <div class="container-fluid ">
-                    <a class="navbar-brand" href="#"><span class="fw-bold">Flameo Hotman</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item me-5">
-                                <a class="nav-link active" aria-current="page" href="#landing-page">Home</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" aria-current="page" href="#About">About</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" aria-current="page" href="#order">Menu</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link"aria-current="page" href="#footer">Contacts</a>
-                            </li>
-                        </ul>
+   <div class="container-fluid body">
+            <section id="navigationBar">
+                <nav class="navbar navbar-expand-lg navbar-light text-white">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="#"><span class="fw-bold">Flameo Hotman</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item me-5">
+                                    <a class="nav-link active" aria-current="page" href="#landing-page">Home</a>
+                                </li>
+                                <li class="nav-item me-5">
+                                    <a class="nav-link" aria-current="page" href="#About">About</a>
+                                </li>
+                                <li class="nav-item me-5">
+                                    <a class="nav-link" aria-current="page" href="#orders">Order</a>
+                                </li>
+                                <li class="nav-item me-5">
+                                    <a class="nav-link"aria-current="page" href="#footer">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <section id="landing-page">
+                <div class="landing-page text-uppercase d-flex flex-column align-items-center text-white justify-content-center text-center">
+                    <h1>Welcome to flameo Hotman, where pizzas are served Hot.</h1>
+                </div>
+            </section>
+            <section id="About">
+                <div class="text-center about">
+                    <h1>ABOUT</h1>
+                    <p>The origin of pizza is Italy. The term was first recorded in the 10<sup>th</sup> century. <br> We as Flameo Hotman pizza company tend keep the originality of pizza and also introducing new and new flavors which engage all your taste buds. Your happiness is our satisfaction. Thank-you</p> <br> <br>
+                </div>
+            </section>
+            <section id="orders">
+                <div  class="container-fluid text-white d-flex justify-content-center pt-5"> 
+                <form id="pizza" class="container">
+                    <div id="pizza-flavor">
+                        <select name="flavor-pizza" id="flavor" class="form-control w-100">
+                            <option selected>Choose Your Flavor</option>
+                            <option value="1">Peri Peri Chicken</option>
+                            <option value="2"> Hawaiian</option>
+                            <option value="3">Boerewors Pizza</option>
+                            <option value="4">BBQ Steak Pizza</option>
+                            <option value="5">Chicken Tikka Pizza</option>
+                            <option value="6">Chicken and Mushroom </option>
+                            <option value="7">Margherita Pizza</option>
+                            <option value="8">Regina Pizza</option>
+                        </select>
+                    </div> <br>
+                    <div class="size">
+                        <select name="pizzaSize" id="pizza-size" class="form-control w-100">
+                            <option selected>Choose your size</option>
+                            <option value="1" name="small">Small-Ksh 600/-</option>
+                            <option value="2" name="medium">Medium-ksh 800/-</option>
+                            <option value="3" name="large">Large-ksh 1000/-</option>
+                        </select>
+                    </div> <br>
+                    <div class="crust">
+                        <select id="crust" class="form-control">
+                            <option selected>Open this select pizza crust</option>
+                            <option value="1">Crispy -Ksh 250/-</option>
+                            <option value="2">Stuffed -ksh 300/-</option>
+                            <option value="3">Glutten-free -ksh 200/-</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="toppings">
+                        <select   class="form-control w-100" id="topping">
+                            <option selected>choose Pizza Topping</option>
+                            <option value="1" name="pep">Pepperoni - Ksh 50</option>
+                            <option value="2">Mushroom -Ksh 50</option>
+                            <option value="3">Onions -Ksh 50</option>
+                            <option value="4">Sausage - Ksh 100</option>
+                            <option value="5">Bacon -Ksh 150</option>
+                            <option value="6">Extra cheese -Ksh 100</option>
+                            <option value="7">Green pepper -Ksh50</option>
+                        </select>
+                    </div><br>
+                    <div class="form-check">
+                        <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity"> 
+                    </div> <br> <br>
+                    <div id="location">
+                        <select id="delivery" class="form-control"> 
+                            <option selected> Choose the appropriate option</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="collection">Collection</option>
+                        </select>
+                    </div> <br>
+                    <button class="btn bg-dark text-white">Place Order</button>
+                    <ul id="order-details">
+                    </ul>
+                </form>
+            </section>
+
+        <section id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h4>LOCATION:</h4> <p>Karen,Waterfront plaza<br>Langata road<br>P.O Box 52503 00100</p>
+                        <h4>CONTACTS:</h4>
+                        <i class="fas 
+                        fa-envelope-square">info@flameohotman.com</i> <br>
+                        <i class="fas fa-phone-alt">0701048045</i>
                     </div>
                 </div>
-            </nav>
-        </section>
-        <section id="landing-page">
-            <div class="landing-page text-uppercase d-flex flex-column align-items-center text-white justify-content-center text-center">
-                <h1>Welcome to flameo Hotman, where pizzas are served Hot.</h1>
             </div>
-        </section>
-        <section id="About">
-            <div class="pt-5 text-center  container-fluid">
-                <h1>ABOUT</h1>
-                <p>The origin of pizza is Italy. The term was first recorded in the 10<sup>th</sup> century. <br> We as Flameo Hotman pizza company tend keep the originality of pizza and also introducing new and new flavors which engage all your taste buds. Your happyness is our satisfaction. Thank-you</p>
-            </div>
-        </section>
-        <section id="orders">
-            <div  class="container-fluid text-white d-flex justify-content-center pt-5"> 
-            <form id="pizza" class="container">
-                <div id="pizza-flavor">
-                    <select name="flavor-pizza" id="flavor" class="form-control w-100">
-                        <option selected>Choose Your Flavor</option>
-                        <option value="1">Peri Peri Chicken</option>
-                        <option value="2"> Hawaiian</option>
-                        <option value="3">Boerewors Pizza</option>
-                        <option value="4">BBQ Steak Pizza</option>
-                        <option value="5">Chicken Tikka Pizza</option>
-                        <option value="6">Chicken and Mushroom </option>
-                        <option value="7">Margherita Pizza</option>
-                        <option value="8">Regina Pizza</option>
-                    </select>
-                </div> <br>
-                <div class="size">
-                    <select name="pizzaSize" id="pizza-size" class="form-control w-100">
-                        <option selected>Choose your size</option>
-                        <option value="1" name="small">Small-Ksh 600/-</option>
-                        <option value="2" name="medium">Medium-ksh 800/-</option>
-                        <option value="3" name="large">Large-ksh 1000/-</option>
-                    </select>
-                </div> <br>
-                <div class="crust">
-                    <select id="crust" class="form-control">
-                        <option selected>Open this select pizza crust</option>
-                        <option value="1">Crispy -Ksh 250/-</option>
-                        <option value="2">Stuffed -ksh 300/-</option>
-                        <option value="3">Glutten-free -ksh 200/-</option>
-                    </select>
-                </div>
-                <br>
-                <div class="toppings">
-                    <select   class="form-control w-100" id="topping">
-                        <option selected>choose Pizza Topping</option>
-                        <option value="1" name="pep">Pepperoni - Ksh 50</option>
-                        <option value="2">Mushroom -Ksh 50</option>
-                        <option value="3">Onions -Ksh 50</option>
-                        <option value="4">Sausage - Ksh 100</option>
-                        <option value="5">Bacon -Ksh 150</option>
-                        <option value="6">Extra cheese -Ksh 100</option>
-                        <option value="7">Green pepper -Ksh50</option>
-                    </select>
-                </div><br>
-                <div class="form-check">
-                    <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity"> 
-                </div> <br> <br>
-                <div id="location">
-                    <select id="delivery" class="form-control"> 
-                        <option selected> Choose the appropriate option</option>
-                        <option value="delivery">Delivery</option>
-                        <option value="collection">Collection</option>
-                    </select>
-                </div> <br>
-                <button class="btn bg-dark text-white">Place Order</button>
-                <ul id="order-details">
-                </ul>
-            </form>
-        </section>
-
-    <section id="footer" class="">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <h4>LOCATION:</h4> <p>Karen,Waterfront plaza<br>Langata road<br>P.O Box 52503 00100</p>
-                    <h4>CONTACTS:</h4>
-                    <i class="fas 
-                    fa-envelope-square">info@flameohotman.com</i> <br>
-                    <i class="fas fa-phone-alt">0701048045</i>
-                </div>
-    </div>
+        </section> 
+    </div>   
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>

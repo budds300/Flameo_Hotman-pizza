@@ -24,7 +24,7 @@ $("document").ready(function(){
 let form = document.getElementById("pizza");
 form.addEventListener("submit", (e) =>{
     e.preventDefault();
-    const flavorPizza = parseInt(document.getElementById("flavor"));
+    const flavorPizza = document.getElementById("flavor").value;
     const sizePizza = parseInt(document.getElementById("pizza-size").value);
     const curstPizza = parseInt(document.getElementById("crust").value);
     const toppingsPizza =parseInt(document.getElementById("topping").value);
@@ -50,28 +50,28 @@ form.addEventListener("submit", (e) =>{
             const deliveryPrice = 300;
             let totalPriceDelivery = customerCostPrice.getPrice()*quantity +deliveryPrice;
             if(flavorPizza==1){
-            alert("Hello your order is Peri Peri Chicken It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+            alert("Hello your order is Peri Peri Chicken It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
         }
             else if(flavorPizza==2){
-                alert("Hello your order is Hawaiian It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Hawaiian It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==3){
-                alert("Hello your order is Boerewors Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Boerewors Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==4){
-                alert("Hello your order is BBQ Steak Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is BBQ Steak Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==5){
-                alert("Hello your order is Chicken Tikka Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Chicken Tikka Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==6){
-                alert("Hello your order is Chicken and Mushroom It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Chicken and Mushroom It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==7){
-                alert("Hello your order is Margherita Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Margherita Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else if(flavorPizza==8){
-                alert("Hello your order is Regina Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  "Thank-you")
+                alert("Hello your order is Regina Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+totalPriceDelivery+  " Thank-you")
             }
             else{
                 alert("Choose a flavor")}
@@ -81,28 +81,28 @@ form.addEventListener("submit", (e) =>{
         else if (deliveryCost=="collection") {
 
             if(flavorPizza==1){
-                alert("Hello your order is Peri Peri Chicken It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                alert("Hello your order is Peri Peri Chicken,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
             }
                 else if(flavorPizza==2){
-                    alert("Hello your order is Hawaiian It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Hawaiian, it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is:: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else if(flavorPizza==3){
-                    alert("Hello your order is Boerewors Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Boerewors Pizza,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is:: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else if(flavorPizza==4){
-                    alert("Hello your order is BBQ Steak Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is BBQ Steak Pizza,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else if(flavorPizza==5){
-                    alert("Hello your order is Chicken Tikka Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Chicken Tikka Pizza,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else if(flavorPizza==6){
-                    alert("Hello your order is Chicken and Mushroom It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Chicken and Mushroom,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  " Thank-you")
                 }
                 else if(flavorPizza==7){
-                    alert("Hello your order is Margherita Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Margherita Pizza,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else if(flavorPizza==8){
-                    alert("Hello your order is Regina Pizza It will be delivered to you shortly at "+ deliveryLocation+ " and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
+                    alert("Hello your order is Regina Pizza,it will be ready for collection to you shortly at our shop in Karen WaterFront and the total price is: "+customerCostPrice.getPrice()*quantity+  "Thank-you")
                 }
                 else{
                     alert("Choose a flavor")}

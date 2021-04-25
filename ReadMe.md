@@ -30,4 +30,4 @@ You can contribute  by forking the project  and cloning it into your local machi
 ## Support Contacts
 if you ran into any challenge  or have a question feel free to  email me budds300@gmail.com
 # License 
-License under [MIT license](license)
+License under [MIT license](LICENSE)

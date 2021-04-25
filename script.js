@@ -54,7 +54,7 @@ form.addEventListener("submit", (e) =>{
             
         }
         else if (deliveryCost=="collection") {
-           alert( "Hello your order is"+ customerOrder+". It will be ready for collection to you shortly here at our shop in Ngong "+"and the total price is: "+customerCostPrice.getPrice()*quantity +  " Thank-you");
+           alert( "Hello your order is"+ customerOrder+". It will be ready for collection to you shortly here at our shop in Karen "+"and the total price is: "+customerCostPrice.getPrice()*quantity +  " Thank-you");
             
             console.log(customerCostPrice.getPrice()*quantity);
             

@@ -13,6 +13,11 @@ a{
     background-position: center;
     height: 100vh; 
 }
-#about{
+#About{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("./Images/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    height: 50vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
     
 }
